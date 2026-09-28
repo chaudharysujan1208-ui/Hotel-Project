@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Haven | Luxury Hotel & Resort</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">LUXE HAVEN</div>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Experience Unmatched Luxury</h1>
+    <p>Your serene escape awaits in the heart of paradise</p>
+  </section>
+
+  <div class="container">
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+      <form class="booking-form">
+        <div class="form-group">
+          <label for="checkin">Check-In</label>
+          <input type="date" id="checkin" required>
+        </div>
+
+        <div class="form-group">
+          <label for="checkout">Check-Out</label>
+          <input type="date" id="checkout" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Room Category</label>
+          <select id="category">
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Suite</option>
+            <option value="suite">Executive Suite</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Check Availability
+        </button>
+      </form>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms">
+      <h2 class="section-title">Accommodations</h2>
+
+      <div class="rooms-grid">
+
+        <!-- Standard Room -->
+        <div class="room-card">
+          <div class="amenities-overlay">
+            <h4>Amenities</h4>
+            <ul>
+              <li>Free High-Speed Wi-Fi</li>
+              <li>Queen Size Bed</li>
+              <li>24/7 Room Service</li>
+            </ul>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=600&q=80" alt="Standard Room">
+
+          <div class="room-info">
+            <h3>Standard Room</h3>
+            <p>Cozy and elegant design, perfect for short stays and business travelers.</p>
+          </div>
+        </div>
+
+        <!-- Deluxe Suite -->
+        <div class="room-card">
+          <div class="amenities-overlay">
+            <h4>Amenities</h4>
+            <ul>
+              <li>Ocean View Balcony</li>
+              <li>King Size Bed</li>
+              <li>Complimentary Breakfast</li>
+            </ul>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Deluxe Suite">
+
+          <div class="room-info">
+            <h3>Deluxe Suite</h3>
+            <p>Spacious accommodation featuring scenic views and premium comforts.</p>
+          </div>
+        </div>
+
+        <!-- Executive Suite -->
+        <div class="room-card">
+          <div class="amenities-overlay">
+            <h4>Amenities</h4>
+            <ul>
+              <li>Private Jacuzzi & Terrace</li>
+              <li>Personal Butler Service</li>
+              <li>Access to VIP Lounge</li>
+            </ul>
+          </div>
+
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=600&q=80" alt="Executive Suite">
+
+          <div class="room-info">
+            <h3>Executive Suite</h3>
+            <p>The peak of luxury offering expansive living spaces and exclusive perks.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Facilities -->
+    <section id="facilities">
+      <h2 class="section-title">Facilities</h2>
+
+      <div class="rooms-grid">
+
+        <div class="room-card">
+          <div class="room-info">
+            <h3>Infinity Pool</h3>
+            <p>Relax with breathtaking views.</p>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-info">
+            <h3>Spa & Wellness</h3>
+            <p>Luxury treatments for complete relaxation.</p>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-info">
+            <h3>Fine Dining</h3>
+            <p>Enjoy gourmet cuisine prepared by world-class chefs.</p>
+          </div>
+        </div>
+
+
+        <div class="room-card">
+          <div class="room-info">
+            <h3>Fitness Center</h3>
+            <p>Stay active with modern equipment and a comfortable workout environment.</p>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-info">
+            <h3>Rooftop Lounge</h3>
+            <p>Unwind with refreshing drinks and beautiful panoramic views.</p>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-info">
+            <h3>24/7 Room Service</h3>
+            <p>Enjoy delicious meals and convenient service anytime you need it.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  // Contact Form 
+
+  <section class="booking-section" id="booking" id="#contact">
+    <div class="booking-container">
+
+        <div class="booking-info">
+            <h2>Book Your Stay</h2>
+            <p>
+                Plan your perfect stay with us. Fill out the form
+                below and we will confirm your booking.
+            </p>
+        </div>
+
+        <form class="booking-form">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="checkin">Check-in</label>
+                    <input type="date" id="checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkout">Check-out</label>
+                    <input type="date" id="checkout" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="guests">Guests</label>
+                    <select id="guests">
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5+ Guests</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="room">Room Type</label>
+                    <select id="room">
+                        <option>Single Room</option>
+                        <option>Double Room</option>
+                        <option>Deluxe Room</option>
+                        <option>Suite</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="message">Special Request</label>
+                <textarea id="message" rows="4"
+                    placeholder="Any special request?"></textarea>
+            </div>
+
+            <button type="submit" class="booking-btn">
+                Book Now
+            </button>
+
+        </form>
+    </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2026 Luxe Haven Resort. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
